@@ -12,7 +12,7 @@ describe "MultiXml" do
 
     it "defaults to the best available gem" do
       # Clear cache variable already set by previous tests
-      MultiXml.send(:remove_instance_variable, :@parser)
+      MultiXml.send(:remove_instance_variable, :@parser) if MultiXml.instance_variable_defined?(:@parser)
       expect(MultiXml.parser.name).to eq('MultiXml::Parsers::Ox')
     end
 
