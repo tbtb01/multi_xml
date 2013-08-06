@@ -21,5 +21,5 @@ Gem::Specification.new do |spec|
   spec.signing_key = File.expand_path("~/.gem/private_key.pem") if $0 =~ /gem\z/
   spec.summary = %q{A generic swappable back-end for XML parsing}
   spec.test_files = Dir.glob("spec/**/*")
-  spec.version = MultiXml::VERSION
+  spec.version = MultiXml::Version
 end
